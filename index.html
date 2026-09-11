@@ -1,8 +1,30 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0"
+
+>
+
+<meta
+name="description"
+content="Patrick Edet is a frontend developer specializing in responsive websites, modern UI design, JavaScript and React development."
+
+>
+
+<meta
+name="keywords"
+content="Patrick Edet, frontend developer, web developer, HTML, CSS, JavaScript, React, portfolio, PE Luxe"
+
+>
+
+  <meta name="author" content="Patrick Edet">
+
+  <meta name="theme-color" content="#050505">
 
   <title>Patrick Edet | Frontend Developer</title>
 
@@ -11,909 +33,1285 @@
 
 <body>
 
-  
+  <!-- =========================
+       HEADER / NAVIGATION
+  ========================== -->
 
   <header class="header">
 
-    <nav class="nav container">
+<nav class="nav container">
 
-      <a href="#home" class="logo">
-        PE<span>.</span>
-      </a>
+  <a href="#home" class="logo" aria-label="Patrick Edet Home">
+    PE<span>.</span>
+  </a>
 
-      <div class="nav-actions">
+  <div class="nav-actions">
 
-        <button class="theme-btn" id="themeBtn" aria-label="Change theme">
-          🌙
-        </button>
+    <button
+      class="theme-btn"
+      id="themeBtn"
+      aria-label="Change theme"
+      type="button"
+    >
+      🌙
+    </button>
 
-        <button class="menu-btn" id="menuBtn" aria-label="Open menu">
-          ☰
-        </button>
+    <button
+      class="menu-btn"
+      id="menuBtn"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+      type="button"
+    >
+      ☰
+    </button>
 
-      </div>
+  </div>
 
-      <ul class="nav-links" id="navLinks">
+  <ul class="nav-links" id="navLinks">
 
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#journey">Journey</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
-        <li><a href="#contact">Contact</a></li>
+    <li>
+      <a href="#home">Home</a>
+    </li>
 
-      </ul>
+    <li>
+      <a href="#about">About</a>
+    </li>
 
-    </nav>
+    <li>
+      <a href="#journey">Journey</a>
+    </li>
+
+    <li>
+      <a href="#skills">Skills</a>
+    </li>
+
+    <li>
+      <a href="#projects">Projects</a>
+    </li>
+
+    <li>
+      <a href="#services">Services</a>
+    </li>
+
+    <li>
+      <a href="#testimonials">Testimonials</a>
+    </li>
+
+    <li>
+      <a href="#contact">Contact</a>
+    </li>
+
+  </ul>
+
+</nav>
 
   </header>
 
-
   <main>
 
+<!-- =========================
+     HERO
+========================== -->
 
-    <section id="home" class="hero">
+<section id="home" class="hero">
 
-      <div class="container hero-grid">
+  <div class="container hero-grid">
 
-        <div class="hero-content">
+    <div class="hero-content">
 
-          <p class="eyebrow">
-            FRONTEND DEVELOPER
-          </p>
+      <p class="eyebrow">
+        FRONTEND DEVELOPER
+      </p>
 
-          <h1>
-            I build modern, responsive websites that
-            <span>stand out.</span>
-          </h1>
+      <h1>
+        I build modern,
+        responsive websites that
+        <span>stand out.</span>
+      </h1>
 
-          <p class="hero-text">
-            I'm a frontend developer focused on creating clean,
-            responsive and user-friendly web experiences.
-            My flagship project is PE Luxe, a modern fashion
-            e-commerce
-          </p>
+      <p class="hero-text">
+        I'm a frontend developer focused on creating clean,
+        responsive and user-friendly web experiences using
+        HTML, CSS, JavaScript and React.
+      </p>
 
-          <div class="hero-actions">
+      <div class="hero-actions">
 
-            <a class="btn primary" href="#projects">
-              View My work
-            </a>
+        <a
+          class="btn primary"
+          href="#projects"
+        >
+          View My Work
+        </a>
 
-            <a class="btn secondary" href="#contact">
-              Let's Work Together
-            </a>
+        <a
+          class="btn secondary"
+          href="#contact"
+        >
+          Hire Me
+        </a>
 
-            <a class="btn secondary" href="resume.pdf" download>
-              Download CV
-            </a>
-
-          </div>
-
-          <div class="mini-stats">
-
-            <div>
-              <strong>HTML</strong>
-              <small>Structure</small>
-            </div>
-
-            <div>
-              <strong>CSS</strong>
-              <small>Design</small>
-            </div>
-
-            <div>
-              <strong>JS</strong>
-              <small>Interaction</small>
-            </div>
-
-          </div>
-
-        </div>
-
-
-        <div class="hero-card">
-
-          <div class="code-window">
-
-            <div class="dots">
-              <i></i>
-              <i></i>
-              <i></i>
-            </div>
-
-<pre><code>&lt;developer&gt;
-
-  &lt;name&gt;Patrick Edet&lt;/name&gt;
-
-  &lt;focus&gt;Frontend&lt;/focus&gt;
-
-  &lt;project&gt;PE Luxe&lt;/project&gt;
-
-  &lt;goal&gt;Build. Create. Grow.&lt;/goal&gt;
-
-&lt;/developer&gt;</code></pre>
-
-          </div>
-
-        </div>
+        <a
+          class="btn secondary"
+          href="resume.pdf"
+          download
+        >
+          Download CV
+        </a>
 
       </div>
 
-    </section>
-
-
-
-    <section class="stats-section">
-
-      <div class="container stats-grid">
-
-        <div class="stat">
-          <strong>5+</strong>
-          <span>Projects</span>
-        </div>
-
-        <div class="stat">
-          <strong>6+</strong>
-          <span>Technologies</span>
-        </div>
-
-        <div class="stat">
-          <strong>100%</strong>
-          <span>Passion</span>
-        </div>
-
-        <div class="stat">
-          <strong>24/7</strong>
-          <span>Learning</span>
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- ================= ABOUT ================= -->
-
-    <section id="about" class="section">
-
-      <div class="container two-col">
+      <div class="mini-stats">
 
         <div>
-
-          <p class="eyebrow">
-            ABOUT ME
-          </p>
-
-          <h2>
-            Turning ideas into digital experiences.
-          </h2>
-
+          <strong>HTML</strong>
+          <small>Structure</small>
         </div>
 
         <div>
-
-          <p>
-            I am a frontend developer building my skills in
-            modern web development.
-          </p>
-
-          <p>
-            I enjoy turning designs and business ideas into
-            responsive websites that are easy to use.
-          </p>
-
-          <p>
-            PE Luxe is one of my key projects. It demonstrates
-            e-commerce design, responsive layouts and
-            interactive frontend development.
-          </p>
-
+          <strong>CSS</strong>
+          <small>Design</small>
         </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- ================= JOURNEY ================= -->
-
-    <section id="journey" class="section muted">
-
-      <div class="container">
-
-        <p class="eyebrow">
-          MY JOURNEY
-        </p>
-
-        <h2>
-          My Development Journey
-        </h2>
-
-        <div class="timeline">
-
-          <div class="timeline-item">
-
-            <div class="timeline-number">
-              01
-            </div>
-
-            <div>
-              <h3>Started Web Development</h3>
-
-              <p>
-                Started learning the fundamentals of
-                building websites.
-              </p>
-            </div>
-
-          </div>
-
-
-          <div class="timeline-item">
-
-            <div class="timeline-number">
-              02
-            </div>
-
-            <div>
-              <h3>HTML & CSS</h3>
-
-              <p>
-                Learned how to create website structure,
-                layouts and responsive designs.
-              </p>
-            </div>
-
-          </div>
-
-
-          <div class="timeline-item">
-
-            <div class="timeline-number">
-              03
-            </div>
-
-            <div>
-              <h3>JavaScript</h3>
-
-              <p>
-                Started creating interactive websites
-                using JavaScript.
-              </p>
-            </div>
-
-          </div>
-
-
-          <div class="timeline-item">
-
-            <div class="timeline-number">
-              04
-            </div>
-
-            <div>
-              <h3>React</h3>
-
-              <p>
-                Started learning component-based
-                frontend development with React.
-              </p>
-            </div>
-
-          </div>
-
-
-          <div class="timeline-item">
-
-            <div class="timeline-number">
-              05
-            </div>
-
-            <div>
-              <h3>PE Luxe</h3>
-
-              <p>
-                Building a real-world fashion e-commerce
-                project to improve my skills.
-              </p>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- ================= SKILLS ================= -->
-
-    <section id="skills" class="section">
-
-      <div class="container">
-
-        <p class="eyebrow">
-          MY TOOLKIT
-        </p>
-
-        <h2>
-          Skills & Technologies
-        </h2>
-
-        <div class="skills-grid">
-
-          <div class="skill">
-            <strong>HTML5</strong>
-            <span>Semantic structure</span>
-          </div>
-
-          <div class="skill">
-            <strong>CSS3</strong>
-            <span>Responsive UI</span>
-          </div>
-
-          <div class="skill">
-            <strong>JavaScript</strong>
-            <span>Web interactions</span>
-          </div>
-
-          <div class="skill">
-            <strong>Git & GitHub</strong>
-            <span>Version control</span>
-          </div>
-
-          <div class="skill">
-            <strong>React</strong>
-            <span>Component-based UI</span>
-          </div>
-
-          <div class="skill">
-            <strong>APIs</strong>
-            <span>Dynamic data</span>
-          </div>
-
-        </div>
-
-
-        <!-- Skill Bars -->
-
-        <div class="skill-bars">
-
-          <div class="skill-bar">
-
-            <div class="skill-info">
-              <span>HTML</span>
-              <span>90%</span>
-            </div>
-
-            <div class="bar">
-              <div class="progress html"></div>
-            </div>
-
-          </div>
-
-
-          <div class="skill-bar">
-
-            <div class="skill-info">
-              <span>CSS</span>
-              <span>85%</span>
-            </div>
-
-            <div class="bar">
-              <div class="progress css"></div>
-            </div>
-
-          </div>
-
-
-          <div class="skill-bar">
-
-            <div class="skill-info">
-              <span>JavaScript</span>
-              <span>75%</span>
-            </div>
-
-            <div class="bar">
-              <div class="progress javascript"></div>
-            </div>
-
-          </div>
-
-
-          <div class="skill-bar">
-
-            <div class="skill-info">
-              <span>React</span>
-              <span>65%</span>
-            </div>
-
-            <div class="bar">
-              <div class="progress react"></div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- ================= PROJECTS ================= -->
-
-    <section id="projects" class="section muted">
-
-      <div class="container">
-
-        <p class="eyebrow">
-          SELECTED WORK
-        </p>
-
-        <h2>
-          My Projects
-        </h2>
-
-
-        <div class="projects-grid">
-
-
-          <!-- PE LUXE -->
-
-          <article class="project featured">
-
-            <div class="project-visual pe">
-              PE LUXE
-            </div>
-
-            <div class="project-content">
-
-              <span class="tag">
-                Featured Project
-              </span>
-
-              <h3>
-                PE Luxe — Fashion E-commerce
-              </h3>
-
-              <p>
-                A premium fashion storefront concept with
-                responsive layouts, product presentation
-                and interactive shopping features.
-              </p>
-
-              <div class="tech">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-              </div>
-
-              <div class="project-buttons">
-
-                <a href="#" class="project-link">
-                  Live Project →
-                </a>
-
-                <a href="#" class="project-link">
-                  GitHub →
-                </a>
-
-              </div>
-
-            </div>
-
-          </article>
-
-
-          <!-- TODO -->
-
-          <article class="project">
-
-            <div class="project-visual todo">
-              TO DO LIST
-            </div>
-
-            <div class="project-content">
-
-              <span class="tag">
-                JavaScript
-              </span>
-
-              <h3>
-                To Do List
-              </h3>
-
-              <p>
-                A responsive to-do list that helps users
-                organize their daily activities.
-              </p>
-
-              <div class="tech">
-                <span>JavaScript</span>
-                <span>HTML</span>
-                <span>CSS</span>
-              </div>
-
-              <a href="#" class="project-link">
-                View Project →
-              </a>
-
-            </div>
-
-          </article>
-
-
-          <!-- CLOCK -->
-
-          <article class="project">
-
-            <div class="project-visual clock">
-              DIGITAL CLOCK
-            </div>
-
-            <div class="project-content">
-
-              <span class="tag">
-                JavaScript
-              </span>
-
-              <h3>
-                Digital Clock
-              </h3>
-
-              <p>
-                A clean responsive clock that displays
-                the current time and updates automatically
-                every second.
-              </p>
-
-              <div class="tech">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-              </div>
-
-              <a href="#" class="project-link">
-                View Project →
-              </a>
-
-            </div>
-
-          </article>
-
-
-          <!-- CALCULATOR -->
-
-          <article class="project">
-
-            <div class="project-visual calculator">
-              CALCULATOR
-            </div>
-
-            <div class="project-content">
-
-              <span class="tag">
-                JavaScript
-              </span>
-
-              <h3>
-                Calculator
-              </h3>
-
-              <p>
-                A simple calculator built to practice
-                JavaScript functions and user interaction.
-              </p>
-
-              <div class="tech">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-              </div>
-
-              <a href="#" class="project-link">
-                View Project →
-              </a>
-
-            </div>
-
-          </article>
-
-
-          <!-- WEATHER -->
-
-          <article class="project">
-
-            <div class="project-visual weather">
-              WEATHER APP
-            </div>
-
-            <div class="project-content">
-
-              <span class="tag">
-                API
-              </span>
-
-              <h3>
-                Weather App
-              </h3>
-
-              <p>
-                A weather application that uses an API
-                to display weather information.
-              </p>
-
-              <div class="tech">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>API</span>
-              </div>
-
-              <a href="#" class="project-link">
-                View Project →
-              </a>
-
-            </div>
-
-          </article>
-
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- ================= SERVICES ================= -->
-
-    <section id="services" class="section">
-
-      <div class="container">
-
-        <p class="eyebrow">
-          WHAT I CAN DO
-        </p>
-
-        <h2>
-          Services
-        </h2>
-
-        <div class="services-grid">
-
-          <div class="service">
-            <span>01</span>
-            <h3>Website Development</h3>
-            <p>
-              Modern websites for businesses,
-              brands and personal projects.
-            </p>
-          </div>
-
-          <div class="service">
-            <span>02</span>
-            <h3>Responsive Design</h3>
-            <p>
-              Interfaces that work beautifully
-              across phones, tablets and desktops.
-            </p>
-          </div>
-
-          <div class="service">
-            <span>03</span>
-            <h3>Landing Pages</h3>
-            <p>
-              Focused pages designed to present
-              products and services clearly.
-            </p>
-          </div>
-
-          <div class="service">
-            <span>04</span>
-            <h3>Frontend Development</h3>
-            <p>
-              Interactive interfaces built with
-              HTML, CSS, JavaScript and React.
-            </p>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- ================= TESTIMONIALS ================= -->
-
-    <section id="testimonials" class="section muted">
-
-      <div class="container">
-
-        <p class="eyebrow">
-          FEEDBACK
-        </p>
-
-        <h2>
-          What People Say
-        </h2>
-
-        <div class="testimonials-grid">
-
-          <div class="testimonial">
-
-            <div class="stars">
-              ★★★★★
-            </div>
-
-            <p>
-              "Patrick created a clean and responsive
-              website for our project."
-            </p>
-
-            <strong>
-              — Client
-            </strong>
-
-          </div>
-
-
-          <div class="testimonial">
-
-            <div class="stars">
-              ★★★★★
-            </div>
-
-            <p>
-              "Great attention to detail and a strong
-              interest in frontend development."
-            </p>
-
-            <strong>
-              — Collaborator
-            </strong>
-
-          </div>
-
-
-          <div class="testimonial">
-
-            <div class="stars">
-              ★★★★★
-            </div>
-
-            <p>
-              "The PE Luxe project shows creativity,
-              design and frontend development skills."
-            </p>
-
-            <strong>
-              — Project Feedback
-            </strong>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- ================= CONTACT ================= -->
-
-    <section id="contact" class="section contact">
-
-      <div class="container contact-box">
 
         <div>
-
-          <p class="eyebrow">
-            LET'S CONNECT
-          </p>
-
-          <h2>
-            Have a project in mind?
-          </h2>
-
-          <p>
-            I'm open to frontend development opportunities,
-            freelance projects and collaborations.
-          </p>
-
+          <strong>JS</strong>
+          <small>Interaction</small>
         </div>
 
-
-        <form id="contactForm" class="contact-form">
-
-          <input
-            type="text"
-            id="name"
-            placeholder="Your Name"
-            required
-          >
-
-          <input
-            type="email"
-            id="email"
-            placeholder="Your Email"
-            required
-          >
-
-          <textarea
-            id="message"
-            rows="5"
-            placeholder="Your Message"
-            required
-          ></textarea>
-
-          <button type="submit" class="btn primary">
-            Send Message
-          </button>
-
-        </form>
-
-
-        <div class="contact-links">
-
-          <a href="mailto:patrickedet490@email.com">
-            patrickedet490@email.com
-          </a>
-
-          <a href="#">
-            LinkedIn
-          </a>
-
-          <a href="#">
-            GitHub
-          </a>
-
-          <a href="#">
-            WhatsApp
-          </a>
-
+        <div>
+          <strong>React</strong>
+          <small>Frontend</small>
         </div>
 
       </div>
 
-    </section>
-
-  </main>
+    </div>
 
 
-  <!-- ================= BACK TO TOP ================= -->
+    <div class="hero-card">
 
-  <button id="topBtn" class="top-btn">
-    ↑
-  </button>
+      <div class="code-window">
+
+        <div class="dots">
+          <i></i>
+          <i></i>
+          <i></i>
+        </div>
+
+        <pre><code>&lt;developer&gt;
+<name>Patrick Edet</name>
+<role>Frontend Developer</role>
+<focus>Modern Websites</focus>
+<project>PE Luxe</project>
+<goal>Build. Create. Grow.</goal>
+</developer></code></pre>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
 
-  <!-- ================= FOOTER ================= -->
+<!-- =========================
+     STATS
+========================== -->
 
-  <footer>
+<section class="stats-section">
 
-    <div class="container footer">
+  <div class="container stats-grid">
+
+    <div class="stat">
+      <strong>5+</strong>
+      <span>Projects</span>
+    </div>
+
+    <div class="stat">
+      <strong>6+</strong>
+      <span>Technologies</span>
+    </div>
+
+    <div class="stat">
+      <strong>100%</strong>
+      <span>Passion</span>
+    </div>
+
+    <div class="stat">
+      <strong>24/7</strong>
+      <span>Learning</span>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================== -->
+
+<section id="about" class="section">
+
+  <div class="container two-col">
+
+    <div>
+
+      <p class="eyebrow">
+        ABOUT ME
+      </p>
+
+      <h2>
+        Turning ideas into digital experiences.
+      </h2>
+
+    </div>
+
+    <div>
 
       <p>
-        © <span id="year"></span>
-        Patrick Edet.
-        Built with HTML, CSS & JavaScript.
+        I am a frontend developer focused on building
+        modern, responsive and user-friendly websites.
       </p>
 
       <p>
-        PE Luxe — Featured Project
+        I enjoy turning designs and business ideas into
+        websites that look professional and work smoothly
+        across phones, tablets and desktop devices.
+      </p>
+
+      <p>
+        My development journey includes HTML, CSS,
+        JavaScript, Git, GitHub, APIs and React.
+      </p>
+
+      <p>
+        PE Luxe is one of my key projects. It demonstrates
+        my interest in e-commerce, responsive design,
+        interactive interfaces and modern frontend development.
       </p>
 
     </div>
 
+  </div>
+
+</section>
+
+
+<!-- =========================
+     JOURNEY
+========================== -->
+
+<section id="journey" class="section muted">
+
+  <div class="container">
+
+    <p class="eyebrow">
+      MY JOURNEY
+    </p>
+
+    <h2>
+      My Development Journey
+    </h2>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+
+        <div class="timeline-number">
+          01
+        </div>
+
+        <div>
+
+          <h3>
+            Started Web Development
+          </h3>
+
+          <p>
+            Started learning the fundamentals of
+            building websites and understanding how
+            the web works.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="timeline-item">
+
+        <div class="timeline-number">
+          02
+        </div>
+
+        <div>
+
+          <h3>
+            HTML & CSS
+          </h3>
+
+          <p>
+            Learned how to create website structure,
+            layouts, styling and responsive designs.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="timeline-item">
+
+        <div class="timeline-number">
+          03
+        </div>
+
+        <div>
+
+          <h3>
+            JavaScript
+          </h3>
+
+          <p>
+            Started creating interactive websites
+            using JavaScript and browser APIs.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="timeline-item">
+
+        <div class="timeline-number">
+          04
+        </div>
+
+        <div>
+
+          <h3>
+            React
+          </h3>
+
+          <p>
+            Started learning component-based frontend
+            development with React.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="timeline-item">
+
+        <div class="timeline-number">
+          05
+        </div>
+
+        <div>
+
+          <h3>
+            PE Luxe
+          </h3>
+
+          <p>
+            Building a real-world fashion e-commerce
+            project to improve my frontend and
+            product development skills.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     SKILLS
+========================== -->
+
+<section id="skills" class="section">
+
+  <div class="container">
+
+    <p class="eyebrow">
+      MY TOOLKIT
+    </p>
+
+    <h2>
+      Skills & Technologies
+    </h2>
+
+
+    <div class="skills-grid">
+
+      <div class="skill">
+        <strong>HTML5</strong>
+        <span>Semantic structure</span>
+      </div>
+
+      <div class="skill">
+        <strong>CSS3</strong>
+        <span>Responsive UI</span>
+      </div>
+
+      <div class="skill">
+        <strong>JavaScript</strong>
+        <span>Web interactions</span>
+      </div>
+
+      <div class="skill">
+        <strong>Git & GitHub</strong>
+        <span>Version control</span>
+      </div>
+
+      <div class="skill">
+        <strong>React</strong>
+        <span>Component-based UI</span>
+      </div>
+
+      <div class="skill">
+        <strong>APIs</strong>
+        <span>Dynamic data</span>
+      </div>
+
+    </div>
+
+
+    <!-- Skill Bars -->
+
+    <div class="skill-bars">
+
+      <div class="skill-bar">
+
+        <div class="skill-info">
+          <span>HTML</span>
+          <span>90%</span>
+        </div>
+
+        <div class="bar">
+          <div class="progress html"></div>
+        </div>
+
+      </div>
+
+
+      <div class="skill-bar">
+
+        <div class="skill-info">
+          <span>CSS</span>
+          <span>85%</span>
+        </div>
+
+        <div class="bar">
+          <div class="progress css"></div>
+        </div>
+
+      </div>
+
+
+      <div class="skill-bar">
+
+        <div class="skill-info">
+          <span>JavaScript</span>
+          <span>75%</span>
+        </div>
+
+        <div class="bar">
+          <div class="progress javascript"></div>
+        </div>
+
+      </div>
+
+
+      <div class="skill-bar">
+
+        <div class="skill-info">
+          <span>React</span>
+          <span>65%</span>
+        </div>
+
+        <div class="bar">
+          <div class="progress react"></div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     PROJECTS
+========================== -->
+
+<section id="projects" class="section muted">
+
+  <div class="container">
+
+    <p class="eyebrow">
+      SELECTED WORK
+    </p>
+
+    <h2>
+      My Projects
+    </h2>
+
+
+    <div class="projects-grid">
+
+
+      <!-- PE LUXE -->
+
+      <article class="project featured">
+
+        <div class="project-visual pe">
+          PE LUXE
+        </div>
+
+        <div class="project-content">
+
+          <span class="tag">
+            Featured Project
+          </span>
+
+          <h3>
+            PE Luxe — Fashion E-commerce
+          </h3>
+
+          <p>
+            A premium fashion storefront concept focused
+            on modern design, product presentation,
+            responsive layouts and interactive shopping
+            experiences.
+          </p>
+
+          <div class="tech">
+
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>React</span>
+
+          </div>
+
+          <div class="project-buttons">
+
+            <!-- Replace these URLs with your real PE Luxe links -->
+
+            <a
+              href="https://github.com/"
+              class="project-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub →
+            </a>
+
+            <a
+              href="#contact"
+              class="project-link"
+            >
+              Ask About Project →
+            </a>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- TODO LIST -->
+
+      <article class="project">
+
+        <div class="project-visual todo">
+          TO DO LIST
+        </div>
+
+        <div class="project-content">
+
+          <span class="tag">
+            JavaScript
+          </span>
+
+          <h3>
+            To Do List
+          </h3>
+
+          <p>
+            A responsive task management application
+            created to practice JavaScript interactions,
+            DOM manipulation and user input.
+          </p>
+
+          <div class="tech">
+
+            <span>JavaScript</span>
+            <span>HTML</span>
+            <span>CSS</span>
+
+          </div>
+
+          <a
+            href="#contact"
+            class="project-link"
+          >
+            Ask About Project →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- DIGITAL CLOCK -->
+
+      <article class="project">
+
+        <div class="project-visual clock">
+          DIGITAL CLOCK
+        </div>
+
+        <div class="project-content">
+
+          <span class="tag">
+            JavaScript
+          </span>
+
+          <h3>
+            Digital Clock
+          </h3>
+
+          <p>
+            A responsive digital clock that displays
+            the current time and updates automatically
+            every second.
+          </p>
+
+          <div class="tech">
+
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+
+          </div>
+
+          <a
+            href="#contact"
+            class="project-link"
+          >
+            Ask About Project →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- CALCULATOR -->
+
+      <article class="project">
+
+        <div class="project-visual calculator">
+          CALCULATOR
+        </div>
+
+        <div class="project-content">
+
+          <span class="tag">
+            JavaScript
+          </span>
+
+          <h3>
+            Calculator
+          </h3>
+
+          <p>
+            A simple calculator built to practice
+            JavaScript functions, calculations and
+            user interaction.
+          </p>
+
+          <div class="tech">
+
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+
+          </div>
+
+          <a
+            href="#contact"
+            class="project-link"
+          >
+            Ask About Project →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- WEATHER APP -->
+
+      <article class="project">
+
+        <div class="project-visual weather">
+          WEATHER APP
+        </div>
+
+        <div class="project-content">
+
+          <span class="tag">
+            API
+          </span>
+
+          <h3>
+            Weather App
+          </h3>
+
+          <p>
+            A weather application that uses an API
+            to retrieve and display weather information.
+          </p>
+
+          <div class="tech">
+
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>API</span>
+
+          </div>
+
+          <a
+            href="#contact"
+            class="project-link"
+          >
+            Ask About Project →
+          </a>
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     SERVICES
+========================== -->
+
+<section id="services" class="section">
+
+  <div class="container">
+
+    <p class="eyebrow">
+      WHAT I CAN DO
+    </p>
+
+    <h2>
+      Services
+    </h2>
+
+    <p class="section-intro">
+      I help individuals, businesses and brands create
+      professional websites that look great and work
+      across modern devices.
+    </p>
+
+
+    <div class="services-grid">
+
+
+      <div class="service">
+
+        <span>01</span>
+
+        <h3>
+          Website Development
+        </h3>
+
+        <p>
+          Modern websites for businesses, brands,
+          portfolios and personal projects.
+        </p>
+
+      </div>
+
+
+      <div class="service">
+
+        <span>02</span>
+
+        <h3>
+          Responsive Design
+        </h3>
+
+        <p>
+          Websites that work smoothly across phones,
+          tablets and desktop computers.
+        </p>
+
+      </div>
+
+
+      <div class="service">
+
+        <span>03</span>
+
+        <h3>
+          Landing Pages
+        </h3>
+
+        <p>
+          Focused landing pages designed to present
+          products, services and businesses clearly.
+        </p>
+
+      </div>
+
+
+      <div class="service">
+
+        <span>04</span>
+
+        <h3>
+          Frontend Development
+        </h3>
+
+        <p>
+          Interactive interfaces built with HTML,
+          CSS, JavaScript and React.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     WHY WORK WITH ME
+========================== -->
+
+<section class="section muted">
+
+  <div class="container">
+
+    <p class="eyebrow">
+      WHY WORK WITH ME
+    </p>
+
+    <h2>
+      Building with purpose.
+    </h2>
+
+
+    <div class="skills-grid">
+
+      <div class="skill">
+
+        <strong>
+          Responsive
+        </strong>
+
+        <span>
+          I build layouts that adapt to different
+          screen sizes.
+        </span>
+
+      </div>
+
+
+      <div class="skill">
+
+        <strong>
+          User Focused
+        </strong>
+
+        <span>
+          I focus on creating interfaces that are
+          simple and easy to use.
+        </span>
+
+      </div>
+
+
+      <div class="skill">
+
+        <strong>
+          Modern
+        </strong>
+
+        <span>
+          I continue learning modern frontend tools
+          and development techniques.
+        </span>
+
+      </div>
+
+
+      <div class="skill">
+
+        <strong>
+          Growth Mindset
+        </strong>
+
+        <span>
+          Every project is an opportunity to improve
+          my development skills.
+        </span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     TESTIMONIALS
+========================== -->
+
+<section id="testimonials" class="section">
+
+  <div class="container">
+
+    <p class="eyebrow">
+      CLIENT FEEDBACK
+    </p>
+
+    <h2>
+      What People Say
+    </h2>
+
+    <p class="section-intro">
+      Client testimonials will be added here as I
+      complete more projects and collaborations.
+    </p>
+
+
+    <div class="testimonials-grid">
+
+
+      <div class="testimonial">
+
+        <div class="stars">
+          ★★★★★
+        </div>
+
+        <p>
+          “I'm focused on delivering clean,
+          responsive and user-friendly websites.”
+        </p>
+
+        <strong>
+          — Patrick Edet
+        </strong>
+
+      </div>
+
+
+      <div class="testimonial">
+
+        <div class="stars">
+          ★★★★★
+        </div>
+
+        <p>
+          “My goal is to turn ideas into practical
+          digital experiences.”
+        </p>
+
+        <strong>
+          — Development Philosophy
+        </strong>
+
+      </div>
+
+
+      <div class="testimonial">
+
+        <div class="stars">
+          ★★★★★
+        </div>
+
+        <p>
+          “PE Luxe represents my continued growth
+          in frontend and e-commerce development.”
+        </p>
+
+        <strong>
+          — Featured Project
+        </strong>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     HIRE ME / CTA
+========================== -->
+
+<section class="section contact">
+
+  <div class="container contact-box">
+
+    <div>
+
+      <p class="eyebrow">
+        HIRE ME
+      </p>
+
+      <h2>
+        Have a project in mind?
+      </h2>
+
+      <p>
+        I'm open to frontend development opportunities,
+        freelance projects, website development and
+        collaborations.
+      </p>
+
+      <p>
+        Tell me what you want to build and I'll get
+        back to you.
+      </p>
+
+    </div>
+
+
+    <div>
+
+      <a
+        href="#contact"
+        class="btn primary"
+      >
+        Start a Project
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================== -->
+
+<section id="contact" class="section">
+
+  <div class="container contact-box">
+
+    <div>
+
+      <p class="eyebrow">
+        LET'S CONNECT
+      </p>
+
+      <h2>
+        Let's build something together.
+      </h2>
+
+      <p>
+        Have a website idea, freelance project or
+        collaboration opportunity? Send me a message.
+      </p>
+
+
+      <div class="contact-links">
+
+        <a
+          href="mailto:patrickedet490@email.com"
+        >
+          Email Me
+        </a>
+
+        <!-- Replace with your real LinkedIn URL -->
+
+        <a
+          href="https://www.linkedin.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+
+        <!-- Replace with your real GitHub URL -->
+
+        <a
+          href="https://github.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+
+        <!-- Replace 234XXXXXXXXXX with your WhatsApp number -->
+
+        <a
+          href="https://wa.me/234XXXXXXXXXX"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          WhatsApp
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <!-- CONTACT FORM -->
+
+    <form
+      id="contactForm"
+      class="contact-form"
+    >
+
+      <label for="name">
+        Your Name
+      </label>
+
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Your Name"
+        autocomplete="name"
+        required
+      >
+
+
+      <label for="email">
+        Your Email
+      </label>
+
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Your Email"
+        autocomplete="email"
+        required
+      >
+
+
+      <label for="message">
+        Your Message
+      </label>
+
+      <textarea
+        id="message"
+        name="message"
+        rows="6"
+        placeholder="Tell me about your project..."
+        required
+      ></textarea>
+
+
+      <button
+        type="submit"
+        class="btn primary"
+      >
+        Send Message
+      </button>
+
+    </form>
+
+  </div>
+
+</section>
+
+  </main>
+
+  <!-- =========================
+       BACK TO TOP
+  ========================== -->
+
+<button
+id="topBtn"
+class="top-btn"
+aria-label="Back to top"
+type="button"
+
+>
+
+↑
+
+  </button>
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer>
+
+<div class="container footer">
+
+  <div>
+
+    <p>
+      © <span id="year"></span>
+      Patrick Edet.
+    </p>
+
+    <p>
+      Built with HTML, CSS & JavaScript.
+    </p>
+
+  </div>
+
+
+  <div>
+
+    <p>
+      PE Luxe — Featured Project
+    </p>
+
+  </div>
+
+</div>
+
   </footer>
 
+  <!-- =========================
+       JAVASCRIPT
+  ========================== -->
 
   <script src="script.js"></script>
 
