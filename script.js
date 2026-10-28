@@ -129,66 +129,102 @@ document.addEventListener("DOMContentLoaded", () => {
   // CONTACT FORM
   // =========================================================
 
+  // =========================================================
+  // CONTACT FORM - FORMSPREE
+  // =========================================================
+
   const contactForm = document.getElementById("contactForm");
 
   if (contactForm) {
-    contactForm.addEventListener("submit", (event) => {
+    contactForm.addEventListener("submit", async (event) => {
       event.preventDefault();
 
       const nameInput = document.getElementById("name");
       const emailInput = document.getElementById("email");
       const messageInput = document.getElementById("message");
+      const status = document.getElementById("contactStatus");
+      const submitButton = contactForm.querySelector('button[type="submit"]');
 
       const name = nameInput ? nameInput.value.trim() : "";
       const email = emailInput ? emailInput.value.trim() : "";
       const message = messageInput ? messageInput.value.trim() : "";
 
-      // Check required fields
       if (!name || !email || !message) {
-        alert("Please fill in all the fields.");
-
+        if (status) {
+          status.textContent = "Please fill in all fields.";
+        }
         return;
       }
 
-      // Basic email validation
-      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-      if (!emailPattern.test(email)) {
-        alert("Please enter a valid email address.");
-
+      if (!emailInput.checkValidity()) {
+        if (status) {
+          status.textContent = "Please enter a valid email address.";
+        }
         return;
       }
 
-      /*
-        GitHub Pages is a static hosting service.
-        It does not have a backend for receiving form submissions.
+      const endpoint = contactForm.action;
 
-        This mailto method opens the visitor's email application.
-      */
+      if (
+        !endpoint.startsWith("https://formspree.io/f/") ||
+        endpoint.endsWith("/YOUR_FORM_ID")
+      ) {
+        if (status) {
+          status.textContent =
+            "Please add your correct Formspree endpoint first.";
+        }
+        return;
+      }
 
-      const portfolioEmail = "patrickedet490@email.com";
+      if (submitButton) {
+        submitButton.disabled = true;
+        submitButton.textContent = "Sending...";
+      }
 
-      const subject = encodeURIComponent(`Portfolio Contact from ${name}`);
+      if (status) {
+        status.textContent = "Sending your message...";
+      }
 
-      const body = encodeURIComponent(
-        `Hello Patrick,
+      try {
+        const response = await fetch(endpoint, {
+          method: "POST",
+          body: new FormData(contactForm),
+          headers: {
+            Accept: "application/json",
+          },
+        });
 
-My name is ${name}.
+        if (!response.ok) {
+          throw new Error("Message submission failed.");
+        }
 
-Email: ${email}
+        if (status) {
+          status.textContent =
+            "Thank you! Your message has been sent successfully.";
+        }
 
-Message:
-${message}
-
-Sent from your portfolio website.`,
-      );
-
-      window.location.href = `mailto:${portfolioEmail}?subject=${subject}&body=${body}`;
-
-      // Reset form
-      contactForm.reset();
+        contactForm.reset();
+      } catch (error) {
+        if (status) {
+          status.textContent =
+            "Sorry, your message could not be sent. Please try again.";
+        }
+      } finally {
+        if (submitButton) {
+          submitButton.disabled = false;
+          submitButton.textContent = "Send Message";
+        }
+      }
     });
   }
+
+  M;
+
+  E;
+
+  M;
+  $;
+
 
   // =========================================================
   // PROJECT BUTTONS
